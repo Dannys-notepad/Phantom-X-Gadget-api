@@ -3,7 +3,7 @@ const { getPostData } = require("../utils");
 const fs = require("fs");
 
 //@des documentation page
-//@route domain/
+//@route /
 async function homePage(req, res) {
   try {
     res.writeHead(200, { "Content-Type": "text/html" });

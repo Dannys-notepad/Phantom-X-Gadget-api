@@ -2,14 +2,14 @@ let products = require("../data/products");
 
 const { writeDataToFile } = require("../utils");
 
-//Find all product function
+//Find all products
 function findAll() {
   return new Promise((resolve, reject) => {
     resolve(products);
   });
 }
 
-//Find product by id function
+//Find a product by id 
 function findById(id) {
   return new Promise((resolve, reject) => {
     const product = products.find((p) => p.id === id);
@@ -17,7 +17,7 @@ function findById(id) {
   });
 }
 
-//Find product by category function
+//Find a product by category 
 function findByCategory(categorySearched) {
   return new Promise((resolve, reject) => {
     const result = [];
@@ -32,7 +32,7 @@ function findByCategory(categorySearched) {
   });
 }
 
-//Create product
+//Create a product
 function add(product) {
   return new Promise((resolve, reject) => {
     const newProduct = { ...product };
@@ -42,7 +42,7 @@ function add(product) {
   });
 }
 
-//update product
+//update a product
 function update(id, product) {
   return new Promise((resolve, reject) => {
     const index = products.findIndex((p) => p.id === id);
@@ -52,7 +52,7 @@ function update(id, product) {
   });
 }
 
-//Remove product function
+//Remove a product
 function remove(id) {
   return new Promise((resolve, reject) => {
     products = products.filter((p) => p.id !== id);

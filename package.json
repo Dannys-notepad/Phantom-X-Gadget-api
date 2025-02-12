@@ -8,7 +8,7 @@
     "dev": "nodemon server.js"
   },
   "keywords": [],
-  "author": "Daniel",
+  "author": "dannysnotepad",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^3.0.1"
